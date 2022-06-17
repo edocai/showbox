@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react'
 import ShowCard from 'components/ShowCard/ShowCard'
 import { shows } from 'types'
+import { List, ListItem } from './styles'
 
 interface Props {
     err?: string,
@@ -15,13 +16,13 @@ const ShowList = ({err, shows }: Props): ReactElement => {
         return <p>No shows available</p>
   }
   return (
-    <ul>
+    <List>
         {shows.map(sho => (
-            <li key={sho.show.id}>
+            <ListItem key={sho.show.id}>
                 <ShowCard content={sho}/>
-            </li>
+            </ListItem>
         ))}
-    </ul>
+    </List>
   )
 }
 

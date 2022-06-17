@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
-import { Link } from 'react-router-dom'
 import { shows } from 'types'
+import { Description, Genre, StyledLink, Name, Details, Img } from './styles'
 
 interface Props {
     content: shows
@@ -8,16 +8,29 @@ interface Props {
 
 const ShowCard = ({ content }: Props): ReactElement => {
     const { show } = content
+    const { summary, name, genres, image, id } = show
+    
+      const removeTags = (summary: string) => {
+    if (summary === null || summary === "") {
+      return false;
+    } else {
+      summary = summary.toString();
+    }
+    return summary.replace(/(<([^>]+)>)/gi, "");
+  };
 
-    const link = `/show/${show.id}`
+    const link = `/show/${id}`
 
     return (
-        <Link to={link}>
-            <img alt={`${show.name} logo`} src={show.image.medium}/>
-            <h2>{show.name}</h2>
-            <p>{show.genre}</p>
-            <p>{show.summary}</p>
-        </Link>
+        <StyledLink to={link}>
+            <Img alt={`${name} logo`} src={image.original}/>
+            <Details>
+                <Name>{name}</Name>
+                <Description>{summary && removeTags(summary)}</Description>
+                <Genre>{genres[0]} {genres[1]}</Genre>
+                
+            </Details>
+        </StyledLink>
     )
 }
 
