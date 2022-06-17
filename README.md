@@ -16,6 +16,8 @@
 - A lot more comfortable with TypeScript and tsconfig 
 - Intro to Webpack config and babel
 - styled-components
+- Axios AJAX request
+- Utilizing an API
 
 ### Hosted/Deployed on
 
