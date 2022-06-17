@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import { breakpoints } from 'styles/breakpoints/breakpoints'
 import {
 	tertiaryTextColor,
@@ -9,7 +8,7 @@ import {
 	backgroundColor,
 } from 'styles/theme/theme'
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.a`
 	width: 100%;
 	display: inline-block;
 	background-color: ${secondaryColor};
@@ -59,4 +58,15 @@ export const Genre = styled.p`
 	color: ${tertiaryTextColor};
 	background-color: ${backgroundColor};
 	float: left;
+`
+
+export const Status = styled.p`
+	padding: 2px 4px;
+	margin: 0 8px 0 0;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	color: ${tertiaryTextColor};
+	background-color: ${backgroundColor};
+	float: right;
 `

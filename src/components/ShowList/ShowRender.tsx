@@ -1,8 +1,7 @@
 import React, { ReactElement } from 'react'
 import ShowCard from 'components/ShowCard/ShowCard'
 import { shows } from 'types'
-import { List, ListItem } from './styles'
-import { P } from './styles'
+import { List, ListItem, P} from './styles'
 
 interface Props {
     err?: string,

@@ -78,8 +78,8 @@ export const P = styled.p`
 		width: 50%;
 		margin: 0 auto;
 		text-align: center;
-		border: 1px solid red;
-		background: white;
+		border: 1px solid #ED0000;
+		background: #ECECEB;
 		color: black;
 		font-size: 18px;
 `

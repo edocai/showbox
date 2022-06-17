@@ -15,7 +15,6 @@ module.exports = {
                 exclude: /node_module/,
                 use: [
                     'babel-loader',
-                    'stylelint-custom-processor-loader',
                 ],
             }
         ]

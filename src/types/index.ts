@@ -3,6 +3,7 @@ export type shows = {
 		id: number, 
 		name: string,	url: string,
 		genres: string[],
+		status: string,
 		summary: string,
 		image: {
 			medium: string

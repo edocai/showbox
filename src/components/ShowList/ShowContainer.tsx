@@ -2,7 +2,7 @@ import React, { ReactElement, useEffect, useState } from 'react'
 import axios from 'axios'
 import ShowRender from 'components/ShowList/ShowRender'
 import { shows } from 'types'
-import { Div, Input, Button, P } from './styles'
+import { Div, Input, Button } from './styles'
 
 const ShowContainer = (): ReactElement => {
     const [shows2, setShows2] = useState<shows[]>([])
@@ -13,6 +13,7 @@ const ShowContainer = (): ReactElement => {
 
         setShows2(data)
     }
+    
     const onSearchHandler = (e: any) => {
         e.preventDefault();
         fetchShows()
@@ -37,7 +38,7 @@ const ShowContainer = (): ReactElement => {
                     </Button>
                 </form>
             </Div>
-        <ShowRender shows={shows2}/>
+        <ShowRender shows={shows2} />
         </>
     ) 
 }
