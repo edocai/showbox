@@ -14,7 +14,7 @@
 ### What I learned from this project
 
 - A lot more comfortable with TypeScript and tsconfig 
-- Webpack config and babel
+- Intro to Webpack config and babel
 - styled-components
 
 ### Hosted/Deployed on
