@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react'
 import ShowCard from 'components/ShowCard/ShowCard'
 import { shows } from 'types'
 import { List, ListItem } from './styles'
+import { P } from './styles'
 
 interface Props {
     err?: string,
@@ -13,9 +14,10 @@ const ShowList = ({err, shows }: Props): ReactElement => {
         return <p>Unable to fetch shows</p>
     }
     if (!shows?.length) {
-        return <p>No shows available</p>
+        return <P>Type in your desired show</P>
   }
   return (
+    <>
     <List>
         {shows.map(sho => (
             <ListItem key={sho.show.id}>
@@ -23,6 +25,7 @@ const ShowList = ({err, shows }: Props): ReactElement => {
             </ListItem>
         ))}
     </List>
+    </>
   )
 }
 

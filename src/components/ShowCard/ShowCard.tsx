@@ -23,7 +23,7 @@ const ShowCard = ({ content }: Props): ReactElement => {
 
     return (
         <StyledLink to={link}>
-            <Img alt={`${name} logo`} src={image.original}/>
+            <Img alt={`${name} logo`} src={image && image.original}/>
             <Details>
                 <Name>{name}</Name>
                 <Description>{summary && removeTags(summary)}</Description>

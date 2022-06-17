@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { breakpoints } from 'styles/breakpoints/breakpoints'
+import { backgroundColor, primaryColor, primaryTextColor, secondaryColor, secondaryTextColor, tertiaryTextColor } from 'styles/theme/theme' 
 
 export const List = styled.ul`
 	display: block;
@@ -39,4 +40,46 @@ export const ListItem = styled.li`
 			margin-right: 0;
 		}
 	}
+`
+
+export const Div = styled.div`
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		
+`
+		
+export const Input = styled.input`
+		width: 90%;
+		margin: 5px 0;
+		padding: 10px 17px;
+		border: 1px solid ${backgroundColor};
+		background: ${tertiaryTextColor};
+		color: ${primaryTextColor};
+		font-size: 20px;
+`
+export const Button = styled.button`
+		padding: 8px 10px;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+		border: 1px solid ${backgroundColor};
+		background: ${primaryColor};
+		color: ${primaryTextColor};
+		font-size: 18px;
+		cursor: pointer;
+	&:hover {
+		color: ${secondaryTextColor};
+	}
+`
+
+export const P = styled.p`
+		padding: 8px 10px;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		border: 1px solid red;
+		background: white;
+		color: black;
+		font-size: 18px;
 `
