@@ -17,7 +17,7 @@
 - Intro to Webpack config and babel
 - styled-components
 - Axios AJAX request
-- Utilizing an API
+- Utilizing a REST API
 
 ### Hosted/Deployed on
 
