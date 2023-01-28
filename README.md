@@ -5,9 +5,9 @@
   <br>
 </h2>
 
-Showbox is a web application that allows users to search for TV shows and view the top 10 related shows. It utilizes the TVmaze REST API to retrieve show information.\
+Showbox is a web application that allows users to search for TV shows and view the top 10 related shows. It utilizes the TVmaze REST API to retrieve show information.
 
-The project is built using TypeScript, React, and Styled Components for styling. It also uses Webpack and Babel for building and transpiling the code. The app is hosted on Netlify.\
+The project is built using TypeScript, React, and Styled Components for styling. It also uses Webpack and Babel for building and transpiling the code. The app is hosted on Netlify.
 
 ### Features
 -Search for TV shows by name\
